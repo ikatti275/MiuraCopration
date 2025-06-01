@@ -54,7 +54,7 @@ nav a.active {
 }
 
 .main-visual p {
-    opacity: 1;
+    opacity: 0; /* 初期状態では非表示 */
     /* 表示 */
     transition: opacity 2s;
 }
