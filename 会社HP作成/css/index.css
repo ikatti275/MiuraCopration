@@ -1,0 +1,108 @@
+/* 全体の基本設定 */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ナビゲーション */
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    /* 折り返しを防ぐ */
+    justify-content: center;
+    gap: 1rem;
+    /* リンクの間に隙間を追加（代替案） */
+    padding: 1rem;
+    background: linear-gradient(135deg, #6b1717, #16213e); /* ヘッダーの背景色を青に */
+    overflow-x: auto;
+    /* 横スクロールを許可（必要なら） */
+}
+
+
+/* ナビのリンク */
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: border-bottom 0.3s;
+}
+
+/* ホバー時・アクティブ時のスタイル */
+nav a:hover,
+nav a.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* トップ画像セクション（ヒーロー） */
+.main-visual {
+    background: url('') no-repeat center/cover;
+    /* height: 60vh; */
+    /* min-height: 300px; */
+    /* max-height: 600px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-visual p {
+    opacity: 1;
+    /* 表示 */
+    transition: opacity 2s;
+}
+
+/* 各セクションのスタイル */
+section {
+    padding: 3rem 1rem;
+    max-width: 960px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+/* 偶数番目セクション背景色 */
+section:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+/* セクション見出し */
+h2 {
+    border-bottom: 2px solid #be2525;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #ec1f1f;
+}
+
+
+/* カードデザイン */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-visual {
+        font-size: 20px;
+    }
+}
