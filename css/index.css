@@ -42,10 +42,10 @@ nav a.active {
 
 /* トップ画像セクション（ヒーロー） */
 .main-visual {
-    background: url('') no-repeat center/cover;
-    /* height: 60vh; */
-    /* min-height: 300px; */
-    /* max-height: 600px; */
+    background: url('../images/topimage.jpg') no-repeat center/cover;
+     height: 50vh; 
+     min-height: 300px; 
+     max-height: 600px; 
     display: flex;
     align-items: center;
     justify-content: center;
