@@ -2,29 +2,18 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8" /> <!-- 文字コードをUTF-8に設定 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- モバイル対応 -->
-    <title>会社ホームページ</title> <!-- ページのタイトル -->
-    <link rel="stylesheet" href="css/base.css"> <!-- CSSファイルを読み込む -->
-    <link rel="stylesheet" href="css/index.css"> <!-- CSSファイルを読み込む -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <!-- Google Fonts読み込み -->
-</head>
+    <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>会社ホームページ</title> <link rel="stylesheet" href="css/base.css"> <link rel="stylesheet" href="css/index.css"> <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    </head>
 
 <body>
-    <!-- ヘッダー（固定ナビゲーション） -->
     <header>
         <nav>
-            <a href="#company">会社案内</a> <!-- 会社案内セクションへのリンク -->
-            <a href="#services">事業案内</a> <!-- 事業案内セクションへのリンク -->
-            <a href="#recruit">採用案内</a> <!-- 採用案内セクションへのリンク -->
-        </nav>
+            <a href="#company">会社案内</a> <a href="#services">事業案内</a> <a href="#recruit">採用案内</a> </nav>
     </header>
     <div class="main-visual">
         <p>すべてのひとをしあわせに</p>
     </div>
 
-    <!-- 会社案内セクション -->
     <section id="company">
         <h2>会社案内</h2>
         <div class="card">
@@ -33,19 +22,21 @@
         </div>
         <div class="card">
             <h3>会社概要</h3>
-            <p>会社の基本情報をここに記載。</p>
+            <img src="images/image.png" alt="会社の写真" class="responsive-image" />
         </div>
         <div class="card">
             <h3>沿革</h3>
-            <p>会社の歴史をここに記載。</p>
+            <p>2025年 8月16日 ： 会社設立</p>
         </div>
         <div class="card">
             <h3>地図</h3>
-            <p>Googleマップの埋め込みなど。</p>
+            <p>〒650-0011 兵庫県神戸市中央区下山手通2-13-3 建創ビル9F</p>
+            <div class="responsive-iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.5279615426216!2d135.1859956118738!3d34.69186122280996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008ee2556782bf%3A0x8ece530482b3f01!2zQklaY29tZm9ydOelnuaIuOS4ieWurg!5e0!3m2!1sja!2sjp!4v1753785115880!5m2!1sja!2sjp" style="border:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
-    <!-- 事業案内セクション -->
     <section id="services">
         <h2>事業案内</h2>
         <div class="card">
@@ -74,7 +65,6 @@
         </div>
     </section>
 
-    <!-- 採用案内セクション -->
     <section id="recruit">
         <h2>採用案内</h2>
         <div class="card">
@@ -86,22 +76,18 @@
             <p>お問い合わせフォームや連絡先をここに記載。</p>
         </div>
     </section>
-
-
 </body>
 <footer>
-    <div class="footer-container"> <!-- 追加：中央寄せの親div -->
-      <div class="footer-center">
-        <h4>株式会社 三浦商会</h4>
-        <p>Miura Corporation</p>
-        <p>「すべてのひとをしあわせに」</p>
-        <p>〒123-4567 オフィス住所</p>
-        <p>電話：03-1234-5678<br>メール：info@example.com</p>
-      </div>
+    <div class="footer-container"> <div class="footer-center">
+            <h4>株式会社 三浦商会</h4>
+            <p>Miura Corporation</p>
+            <p>「すべてのひとをしあわせに」</p>
+            <p>〒650-0011 兵庫県神戸市中央区下山手通2-13-3 建創ビル9F</p>
+            <p>電話：03-1234-5678<br>メール：info@example.com</p>
+        </div>
     </div>
     <p class="footer-copy">© 2025 株式会社 三浦商会 - Miura Corporation. All Rights Reserved.</p>
-  </footer>
-<!-- JavaScriptファイルを読み込む -->
+</footer>
 <script src="js/script.js"></script>
 
 </html>

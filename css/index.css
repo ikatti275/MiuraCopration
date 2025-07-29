@@ -16,7 +16,8 @@ nav {
     gap: 1rem;
     /* リンクの間に隙間を追加（代替案） */
     padding: 1rem;
-    background: linear-gradient(135deg, #6b1717, #16213e); /* ヘッダーの背景色を青に */
+    background: linear-gradient(135deg, #6b1717, #16213e);
+    /* ヘッダーの背景色を青に */
     overflow-x: auto;
     /* 横スクロールを許可（必要なら） */
 }
@@ -47,7 +48,7 @@ nav a.active {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: rgb(253, 130, 130);
     font-size: 28px;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -93,6 +94,33 @@ h2 {
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+/* --- Responsive Image --- */
+.responsive-image {
+    max-width: 100%; /* Ensures the image never exceeds its container's width */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes extra space below the image */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* --- Responsive iframe (Map) --- */
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width = 9 / 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto; /* Center the container */
+    max-width: 100%; /* Ensures it doesn't exceed its parent's width */
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove default iframe border */
 }
 
 /* スマホ対応 */
