@@ -2,11 +2,22 @@
 header {
     position: sticky; /* スクロールしてもヘッダーを固定 */
     top: 0; /* ヘッダーを画面上部に固定 */
-    background: linear-gradient(135deg, #6b1717, #16213e); /* ヘッダーの背景色を青に */
     z-index: 1000; /* 他の要素より前面に表示 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ヘッダーに薄い影を追加 */
 }
+/* --- 会社名のスタイル --- */
+.company-header {
+    background: linear-gradient(135deg, #dbbbbb, #b4c6f8);
+    padding: 20px 40px; /* ここを修正 */
+}
 
+.company-header p {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 2px 0;
+    text-align: left; /* 会社名を左寄せに */
+}
 
 /* フッター */
 footer {
@@ -35,10 +46,6 @@ footer {
 .footer-center {
     margin: 6px 0; /* 段落間の余白を設定 */
 }
-
-
-
-
 
 .footer-copy {
     text-align: center; /* コピーライトを中央揃え */
