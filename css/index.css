@@ -10,14 +10,13 @@ body {
 /* ナビゲーション */
 nav {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap !important;
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
     background: linear-gradient(135deg, #6b1717, #16213e);
     /* ヘッダーの背景色を青に */
     overflow-x: auto;
-    min-width: 0; /* 必ず入れる（flexbox内でのはみ出し防止） */
     width: 100%;
     box-sizing: border-box;
 }
@@ -26,8 +25,9 @@ nav {
 
 /* ナビのリンク */
 nav a {
+    min-width: 0; /* 必ず入れる（flexbox内でのはみ出し防止） */
     color: white;
-    margin: 0 0.5rem; /* ここを少し狭める */
+    margin: 0 0.1rem; /* ここを少し狭める */
     text-decoration: none;
     font-weight: bold;
     white-space: nowrap;
@@ -142,6 +142,6 @@ h2 {
     nav a {
         flex: 0 0 auto;
         white-space: nowrap;
-        margin: 0 0.75rem;
+        margin: 0 0.1,rem;
     }
 }
